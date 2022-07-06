@@ -49,7 +49,7 @@ app.layout = html.Div([
 # ------------------------------------------------------------------------------
 
 
-import_df = pd.read_csv('import_df.csv')
+import_df = pd.read_csv('import_df.csv', encoding='utf-8')
 
 import_df = import_df.fillna(0)
 import_tot = import_df[import_df['Code'] == 'TOTAL']
